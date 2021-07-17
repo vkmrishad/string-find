@@ -3,7 +3,7 @@ from typing import List
 
 def find(data: List[str], query: str):
     """
-    Function that will find all exact words from list of words
+    Function that will find all exact words from list of words.
     """
     # List for storing result.
     result = list()
