@@ -2,6 +2,7 @@
 String Find
 
 NB:
+* Currently find is case-insensitive. Everything will be compared with lowercase.
 * Added Github Action and Pre-commit for Pylint Check (Using Black - https://black.readthedocs.io/en/stable/).
 * Pytest for testing.
 
