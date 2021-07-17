@@ -1,8 +1,9 @@
 from typing import List
 
+
 def find(data: List[str], query: str):
     """
-        Function that will find all exact words from list of words
+    Function that will find all exact words from list of words
     """
     # List for storing result.
     result = list()
@@ -21,15 +22,15 @@ def find(data: List[str], query: str):
                         result.append(item)
                     # Else, sort both item and query and compare. Using case insensitive comparison.
                     else:
-                        query_str = ''.join(sorted(query))
-                        item_str = ''.join(sorted(item))
+                        query_str = "".join(sorted(query))
+                        item_str = "".join(sorted(item))
                         if str(query_str).lower() == str(item_str).lower():
                             # Push to result list
                             result.append(item)
 
             # Return list of result items.
-            return result 
-           
+            return result
+
         else:
             # If data and query not found
             if not data and not query:
