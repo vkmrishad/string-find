@@ -1,10 +1,14 @@
 # string-find
 String Find
 
-NB:
+Note:
 * Currently find is case-insensitive. Everything will be compared with lowercase.
 * Added Github Action and Pre-commit for Pylint Check (Using Black - https://black.readthedocs.io/en/stable/).
 * Pytest for testing.
+
+Todo:
+* Improvements needed for error handling, eg:- If integer passed instead of string, it will give error.
+* Optimization might be needed for large datasets.
 
 ## Environment and Package Management
 Install Poetry
