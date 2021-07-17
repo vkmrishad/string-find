@@ -41,6 +41,10 @@ Install Packages from Poetry
     result = Find(data, query)
     print(result)  # ["seo"]
 
+    # Class Different Usage
+    result = StringFind(data, query).find()
+    print(result)  # ["seo"]
+
 ## Test
 
     $ pytest
