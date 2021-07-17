@@ -1,4 +1,9 @@
 from string_find import find
 
 
-print(find(["helloworld", "foo", "bar", "stylight_team", "seo"], "eos"))
+# Usage
+data = ["helloworld", "foo", "bar", "stylight_team", "seo"]
+query = "eos"
+
+result = find(data, query)
+print(result)  # ["seo"]
