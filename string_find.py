@@ -12,6 +12,8 @@ def find(data: List[str], query: str):
     if type(data) == list:
         # Check if data and query is not None.
         if data and query:
+            # Sort query string
+            query_str_sorted = "".join(sorted(query))
             # Loop all item in list.
             for item in data:
                 # Check for length to skip sorting operation.
@@ -20,11 +22,10 @@ def find(data: List[str], query: str):
                     if str(query).lower() == str(item).lower():
                         # Push to result list
                         result.append(item)
-                    # Else, sort both item and query and compare. Using case insensitive comparison.
+                    # Else, sort item and compare. Using case insensitive comparison.
                     else:
-                        query_str = "".join(sorted(query))
                         item_str = "".join(sorted(item))
-                        if str(query_str).lower() == str(item_str).lower():
+                        if str(query_str_sorted).lower() == str(item_str).lower():
                             # Push to result list
                             result.append(item)
 
